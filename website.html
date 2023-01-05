@@ -13,23 +13,24 @@
 
     <script src="/path/to/script.js"></script>
     <script>
-      function runScript() {
-        const words = ["Britain", "coloniser", "colonised", "empire", "exploitation", "oppression", "domination", "conquest", "subjugation", "imperialism", "colonialism", "subordinate", "subservient", "enslaved", "oppress", "exploit", "dominate", "conquer", "subjugate", "colonise", "colony", "oppressor", "exploiter", "dominator", "conqueror", "subjugator", "coloniser", "colonisation", "oppressive", "exploitative", "domineering", "conquering", "subjugating", "colonising", "colonial", "imperial", "subjugated", "colonised", "colonialist", "imperialist", "subjugationist", "colonisationist", "colonially", "imperially", "subjugatedly", "colonisedly", "colonising", "imperialising", "subjugating", "colonising", "colonisation", "imperialisation", "subjugation", "colonisation", "decolonisation", "decolonize", "decolonised", "decolonisation", "neocolonialism", "neocolonial", "neocolonialist", "postcolonial", "postcolonialism"];
+  // Your script goes here
+  function runScript() {
+    const words = ["Britain", "coloniser", "colonised", "empire", "exploitation", "oppression", "domination", "conquest", "subjugation", "imperialism", "colonialism", "subordinate", "subservient", "enslaved", "oppress", "exploit", "dominate", "conquer", "subjugate", "colonise", "colony", "oppressor", "exploiter", "dominator", "conqueror", "subjugator", "coloniser", "colonisation", "oppressive", "exploitative", "domineering", "conquering", "subjugating", "colonising", "colonial", "imperial", "subjugated", "colonised", "colonialist", "imperialist", "subjugationist", "colonisationist", "colonially", "imperially", "subjugatedly", "colonisedly", "colonising", "imperialising", "subjugating", "colonising", "colonisation", "imperialisation", "subjugation", "colonisation", "decolonisation", "decolonize", "decolonised", "decolonisation", "neocolonialism", "neocolonial", "neocolonialist", "postcolonial", "postcolonialism"];
 
-        // Generate poem
-        let poem = "";
-        for (let i = 0; i < 4; i++) {
-          // Choose a random word
-          const word = words[Math.floor(Math.random() * words.length)];
-          // Add word to poem
-          poem += word + " ";
-}
+    // Generate poem
+    let poem = "";
+    for (let i = 0; i < 4; i++) {
+      // Choose a random word
+      const word = words[Math.floor(Math.random() * words.length)];
+      // Add word to poem
+      poem += word + " ";
+    }
 
-// Print poem
-console.log(poem);
+    // Print poem
+    console.log(poem);
 
-        console.log("Hello, World!");
-      }
-    </script>
+    console.log("Hello, World!");
+  }
+</script>
   </body>
 </html>
