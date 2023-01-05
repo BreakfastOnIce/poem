@@ -13,23 +13,19 @@
 <button onclick="runCode()">Run Code</button>
 
     <script>
-function runCode() {
-  
-        import random
+const words = ["Britain", "coloniser", "colonised", "empire", "exploitation", "oppression", "domination", "conquest", "subjugation", "imperialism", "colonialism", "subordinate", "subservient", "enslaved", "oppress", "exploit", "dominate", "conquer", "subjugate", "colonise", "colony", "oppressor", "exploiter", "dominator", "conqueror", "subjugator", "coloniser", "colonisation", "oppressive", "exploitative", "domineering", "conquering", "subjugating", "colonising", "colonial", "imperial", "subjugated", "colonised", "colonialist", "imperialist", "subjugationist", "colonisationist", "colonially", "imperially", "subjugatedly", "colonisedly", "colonising", "imperialising", "subjugating", "colonising", "colonisation", "imperialisation", "subjugation", "colonisation", "decolonisation", "decolonize", "decolonised", "decolonisation", "neocolonialism", "neocolonial", "neocolonialist", "postcolonial", "postcolonialism"];
 
-# List of words to choose from
-words = ["Britain", "coloniser", "colonised", "empire", "exploitation", "oppression", "domination", "conquest", "subjugation", "imperialism", "colonialism", "subordinate", "subservient", "enslaved", "oppress", "exploit", "dominate", "conquer", "subjugate", "colonise", "colony", "oppressor", "exploiter", "dominator", "conqueror", "subjugator", "coloniser", "colonisation", "oppressive", "exploitative", "domineering", "conquering", "subjugating", "colonising", "colonial", "imperial", "subjugated", "colonised", "colonialist", "imperialist", "subjugationist", "colonisationist", "colonially", "imperially", "subjugatedly", "colonisedly", "colonising", "imperialising", "subjugating", "colonising", "colonisation", "imperialisation", "subjugation", "colonisation", "decolonisation", "decolonize", "decolonised", "decolonisation", "neocolonialism", "neocolonial", "neocolonialist", "postcolonial", "postcolonialism"]
+// Generate poem
+let poem = "";
+for (let i = 0; i < 4; i++) {
+  // Choose a random word
+  const word = words[Math.floor(Math.random() * words.length)];
+  // Add word to poem
+  poem += word + " ";
+}
 
-# Generate poem
-poem = ""
-for i in range(4):
-  # Choose a random word
-  word = random.choice(words)
-  # Add word to poem
-  poem += word + " "
-
-# Print poem
-print(poem)
+// Print poem
+console.log(poem);
 
         console.log("Hello, World!");
       }
