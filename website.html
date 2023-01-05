@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to my website!</h1>
+    <p>This website is a simple example of how to create a website that can run a Python code.</p>
+    <button onclick="runCode()">Run Code</button>
+    <script>
+      function runCode() {
+        import random
+
+# List of words to choose from
+words = ["Britain", "coloniser", "colonised", "empire", "exploitation", "oppression", "domination", "conquest", "subjugation", "imperialism", "colonialism", "subordinate", "subservient", "enslaved", "oppress", "exploit", "dominate", "conquer", "subjugate", "colonise", "colony", "oppressor", "exploiter", "dominator", "conqueror", "subjugator", "coloniser", "colonisation", "oppressive", "exploitative", "domineering", "conquering", "subjugating", "colonising", "colonial", "imperial", "subjugated", "colonised", "colonialist", "imperialist", "subjugationist", "colonisationist", "colonially", "imperially", "subjugatedly", "colonisedly", "colonising", "imperialising", "subjugating", "colonising", "colonisation", "imperialisation", "subjugation", "colonisation", "decolonisation", "decolonize", "decolonised", "decolonisation", "neocolonialism", "neocolonial", "neocolonialist", "postcolonial", "postcolonialism"]
+
+# Generate poem
+poem = ""
+for i in range(4):
+  # Choose a random word
+  word = random.choice(words)
+  # Add word to poem
+  poem += word + " "
+
+# Print poem
+print(poem)
+
+        console.log("Hello, World!");
+      }
+    </script>
+  </body>
+</html>
